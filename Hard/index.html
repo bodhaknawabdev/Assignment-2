@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astro</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <nav class="navbar" id="main-navbar">
+      <div class="nav-left">
+        <a href="#" class="logo" id="logo-link">ASTRO<span class="logo-dot">.</span></a>
+      </div>
+      <div class="nav-center">
+        <ul class="nav-links">
+          <li><a href="#" class="active" id="nav-link-products">PRODUCTS</a></li>
+          <li><a href="#" id="nav-link-category">CATEGORY</a></li>
+          <li><a href="#" id="nav-link-about">ABOUT US</a></li>
+          <li><a href="#" id="nav-link-contact">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <button class="icon-btn" id="search-btn" aria-label="Search"><i class="ri-search-line"></i></button>
+        <button class="icon-btn" id="cart-btn" aria-label="Cart"><i class="ri-shopping-bag-line"></i></button>
+        <button class="icon-btn" id="profile-btn" aria-label="Profile"><i class="ri-user-3-line"></i></button>
+      </div>
+    </nav>
+
+    <main class="main-showcase">
+      <section class="info-panel" id="product-info-panel">
+        <div class="badge-new">NEW</div>
+        <h1 class="product-title">ASTRO<br>WINTER<br>ARMOR <span class="accent-title">II</span></h1>
+        <div class="product-price">$560</div>
+
+        <div class="description-section">
+          <h2 class="section-label">DESCRIPTION</h2>
+          <p class="description-text">
+            A next-gen cold war jacket. The essence of retro style and the resilience you need for extreme winter
+            conditions. Engineered to provide versatile function for your winter wardrobe, accented with strategic
+            utility details.
+          </p>
+          <a href="#" class="read-more" id="read-more-link">READ MORE <i class="ri-arrow-right-s-line"></i></a>
+        </div>
+
+        <div class="accordions-container">
+          <div class="accordion-item" id="accordion-material">
+            <span>MATERIAL & CARE</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </div>
+          <div class="accordion-item" id="accordion-shipping">
+            <span>SHIPPING & RETURNS</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero-panel" id="product-hero-panel">
+        <div class="hero-image-container">
+          <img src="images/beige_jacket.png" alt="Astro Winter Armor II Jacket" class="hero-image" id="hero-jacket-img">
+        </div>
+        <div class="performance-badges">
+          <div class="perf-badge">
+            <i class="ri-snowflake-line"></i>
+            <span>EXTREME WARMTH</span>
+          </div>
+          <div class="perf-badge">
+            <i class="ri-shield-flash-line"></i>
+            <span>WIND RESISTANT</span>
+          </div>
+          <div class="perf-badge">
+            <i class="ri-leaf-line"></i>
+            <span>LIGHTWEIGHT</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="config-panel" id="product-config-panel">
+        <div class="config-group size-group">
+          <h2 class="config-label">SIZE</h2>
+          <div class="size-options">
+            <button class="size-btn" id="size-btn-s">S</button>
+            <button class="size-btn active" id="size-btn-m">M</button>
+            <button class="size-btn" id="size-btn-l">L</button>
+            <button class="size-btn" id="size-btn-xl">XL</button>
+          </div>
+          <div class="size-divider"></div>
+          <a href="#" class="size-guide-link" id="size-guide-link">SIZE GUIDE <i class="ri-arrow-right-s-line"></i></a>
+          <div class="size-divider"></div>
+        </div>
+
+        <div class="config-group color-group">
+          <h2 class="config-label">COLOR</h2>
+          <div class="color-options-grid">
+            <div class="color-option active" id="color-opt-beige" data-color="beige">
+              <div class="color-thumb-wrapper">
+                <img src="images/beige_jacket.png" alt="Beige Puffer">
+              </div>
+              <span class="color-name">BEIGE</span>
+            </div>
+            <div class="color-option" id="color-opt-red" data-color="red">
+              <div class="color-thumb-wrapper">
+                <img src="images/red_jacket.png" alt="Red Puffer">
+              </div>
+              <span class="color-name">RED</span>
+            </div>
+            <div class="color-option" id="color-opt-black" data-color="black">
+              <div class="color-thumb-wrapper">
+                <img src="images/black_jacket.png" alt="Black Puffer">
+              </div>
+              <span class="color-name">BLACK</span>
+            </div>
+            <div class="color-option" id="color-opt-white" data-color="white">
+              <div class="color-thumb-wrapper">
+                <img src="images/white_jacket.png" alt="White Puffer">
+              </div>
+              <span class="color-name">WHITE</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="actions-group">
+          <button class="wishlist-btn" id="wishlist-btn">
+            <i class="ri-heart-line"></i> ADD TO WISHLIST
+          </button>
+          <button class="bag-btn" id="add-to-bag-btn">
+            <span>ADD TO BAG</span> <i class="ri-shopping-bag-line"></i>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <section class="detail-cards-section" id="product-detail-cards">
+      <div class="detail-card">
+        <div class="card-image-box">
+          <img src="images/fabric_detail.png" alt="Fabric close-up">
+        </div>
+        <div class="card-info">
+          <h3>3X WATER-REPELLENT</h3>
+          <p>The fabric repels rain, snow and moisture while keeping you dry and comfortable.</p>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <div class="card-image-box">
+          <img src="images/puffered.png" alt="Insulation padding close-up">
+        </div>
+        <div class="card-info">
+          <h3>3D AREAS PUFFERED</h3>
+          <p>Strategically padded zones trap heat and maximize insulation without the bulk.</p>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <div class="card-image-box">
+          <img src="images/insulation.png" alt="Model wearing jacket">
+        </div>
+        <div class="card-info">
+          <h3>INSULATION</h3>
+          <p>Advanced thermal filling locks in warmth up to -30°C for extreme conditions.</p>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <div class="card-image-box">
+          <img src="images/utility_pockets.png" alt="Pocket close-up">
+        </div>
+        <div class="card-info">
+          <h3>UTILITY POCKETS</h3>
+          <p>Multi-functional pockets for secure storage on the go.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-benefits-bar" id="main-footer">
+      <div class="benefit-item">
+        <div class="benefit-icon-wrapper">
+          <i class="ri-centos-line"></i>
+        </div>
+        <div class="benefit-text">
+          <h4>PREMIUM FABRICS</h4>
+          <p>Durable, high-performance materials</p>
+        </div>
+      </div>
+
+      <div class="benefit-item">
+        <div class="benefit-icon-wrapper">
+          <i class="ri-shield-flash-line"></i>
+        </div>
+        <div class="benefit-text">
+          <h4>THERMAL PROTECTION</h4>
+          <p>Built for extreme winter climates</p>
+        </div>
+      </div>
+
+      <div class="benefit-item">
+        <div class="benefit-icon-wrapper">
+          <i class="ri-album-line"></i>
+        </div>
+        <div class="benefit-text">
+          <h4>DESIGNED FOR FUNCTION</h4>
+          <p>Every detail serves a purpose</p>
+        </div>
+      </div>
+
+      <div class="benefit-item">
+        <div class="benefit-icon-wrapper">
+          <i class="ri-star-line"></i>
+        </div>
+        <div class="benefit-text">
+          <h4>LIMITED EDITION</h4>
+          <p>Exclusive drops, limited quantities</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>
